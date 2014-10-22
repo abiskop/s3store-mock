@@ -1,6 +1,6 @@
 {
   "name": "s3store-mock",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A mock version of s3store",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "mocha": "^2.0.0",
-    "s3store": "git://github.com/mirkokiefer/s3store.git#47bfd92e50c7ee2cf206252bf191a3721259935a"
+    "s3store": "0.0.3"
   },
   "author": "Mirko Kiefer <mail@mirkokiefer.com>",
   "license": "ISC"
