@@ -18,6 +18,11 @@ function createMockStore() {
 
   function readObject(key, cb) {
     var offer = dict[key];
+    if (offer === undefined) {
+      var error = new Error('not found');
+      error.statusCode = 404;
+      return cb(error);
+    }
     cb(null, offer);
   }
 
