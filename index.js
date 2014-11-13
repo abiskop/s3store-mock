@@ -1,14 +1,15 @@
 
 module.exports = createMockStore;
 
-function createMockStore() {
-  var dict = {};
+function createMockStore(initialState) {
+  var dict = initialState || {};
 
   return {
     writeObject: writeObject,
     readObject: readObject,
     deleteObject: deleteObject,
-    readKeys: readKeys
+    readKeys: readKeys,
+    state: dict
   };
 
   function writeObject(key, data, cb) {
